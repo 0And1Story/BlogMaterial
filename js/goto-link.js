@@ -1,4 +1,5 @@
 function gotoLink(link) {
+    if (link == '' || link == 'javascript:;') return;
     let main = document.getElementsByTagName('main')[0];
     main.setAttribute('style', 'animation: fade-out 1s ease-out; opacity: 0; position: relative; top: 50px;');
     setTimeout(function() { window.location.href = link; }, 1000);
