@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - 0And1Story Blog Material Design</title>
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script src="../js/goto-link.js"></script>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-green">
+    <div class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-theme">
+
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+            <a href="../index.html" class="mdui-typo-headline">0And1Story</a>
+            <a href="javascript:;" class="mdui-typo-title">文章列表</a>
+            <div class="mdui-toolbar-spacer"></div>
+
+            <a class="mdui-btn" mdui-menu="{target: '#article-menu', covered: false}"><i class="mdui-icon material-icons">book</i>文章</a>
+            <ul class="mdui-menu mdui-text-color-theme" id="article-menu">
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple"><i class="mdui-icon material-icons">collections_bookmark</i> 所有文章</a>
+                </li>
+                <li class="mdui-divider"></li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple"><i class="mdui-icon material-icons">public</i> OI</a>
+                </li>
+            </ul>
+
+            <a class="mdui-btn" mdui-menu="{target: '#about-menu', covered: false}"><i class="mdui-icon material-icons">info</i>关于</a>
+            <ul class="mdui-menu mdui-text-color-theme" id="about-menu">
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">在开始之前</a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple"><i class="mdui-icon material-icons">favorite</i> 感谢</a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple"><i class="mdui-icon material-icons">people</i> 大佬</a>
+                </li>
+                <li class="mdui-divider"></li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">Luogu</a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">GitHub</a>
+                </li>
+            </ul>
+
+            <a class="mdui-btn" mdui-menu="{target: '#friendlink-menu', covered: false}"><i class="mdui-icon material-icons">link</i>友链</a>
+            <ul class="mdui-menu mdui-text-color-theme" id="friendlink-menu">
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">Dottle</a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">Social Zhao</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="title">
+        <img class="mdui-center mdui-img-circle" src="https://s2.ax1x.com/2019/07/11/Z25iLt.jpg" width="100px">
+        <div class="mdui-valign">
+            <a href="javascript:;" class="mdui-center mdui-typo-display-2 mdui-text-color-theme">0And1Story 的博客</a>
+        </div>
+    </div>
+    <main class="mdui-container-fluid">
+        <div class="mdui-col-md-8 mdui-col-offset-md-2">
+            <div class="mdui-card mdui-hoverable mdui-ripple">
+                <div class="mdui-card-primary">
+                    <div class="mdui-row">
+                        <span class="mdui-float-left mdui-card-primary-title">快读模板</span>
+                        <div class="mdui-chip mdui-float-right">
+                            <a class="mdui-chip-title">模板</a>
+                        </div>
+                    </div>
+                    <div class="mdui-card-primary-subtitle">2019-8-14 22:36:30</div>
+                </div>
+                <div class="mdui-card-content mdui-typo-body-1">
+                    今天写了一个不错的快读，跟大家分享...
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
