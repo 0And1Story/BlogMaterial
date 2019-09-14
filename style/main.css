@@ -10,6 +10,7 @@ body {
 }
 .mdui-container-fluid .mdui-col-md-8 .mdui-card {
     padding: 15px;
+    margin-bottom: 20px;
 }
 .mdui-container-fluid .mdui-col-md-8 .mdui-card .mdui-card-primary .mdui-row .mdui-card-primary-title {
     color: black;
@@ -23,9 +24,6 @@ body {
 }
 #intro-img:hover {
     transform: scale(1.2);
-}
-main {
-    animation: fade-in 1s ease-in;
 }
 
 @keyframes fade-in {
@@ -48,5 +46,28 @@ main {
     100% {
         opacity: 0;
         top: 50px;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -200px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes fade-out-right {
+    0% {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+    100% {
+        opacity: 0;
+        left: 50px;
     }
 }

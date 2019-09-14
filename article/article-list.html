@@ -65,7 +65,7 @@
     <div id="title">
         <img class="mdui-center mdui-img-circle" src="https://s2.ax1x.com/2019/07/11/Z25iLt.jpg" width="100px">
         <div class="mdui-valign">
-            <a href="javascript:;" class="mdui-center mdui-typo-display-2 mdui-text-color-theme">0And1Story 的博客</a>
+            <a href="../index.html" class="mdui-center mdui-typo-display-2 mdui-text-color-theme">0And1Story 的博客</a>
         </div>
     </div>
     <main class="mdui-container-fluid">
@@ -84,8 +84,77 @@
                     今天写了一个不错的快读，跟大家分享...
                 </div>
             </div>
+            <div class="mdui-card mdui-hoverable mdui-ripple">
+                <div class="mdui-card-primary">
+                    <div class="mdui-row">
+                        <span class="mdui-float-left mdui-card-primary-title">快读模板</span>
+                        <div class="mdui-chip mdui-float-right">
+                            <a class="mdui-chip-title">模板</a>
+                        </div>
+                    </div>
+                    <div class="mdui-card-primary-subtitle">2019-8-14 22:36:30</div>
+                </div>
+                <div class="mdui-card-content mdui-typo-body-1">
+                    今天写了一个不错的快读，跟大家分享...
+                </div>
+            </div>
+            <div class="mdui-card mdui-hoverable mdui-ripple">
+                <div class="mdui-card-primary">
+                    <div class="mdui-row">
+                        <span class="mdui-float-left mdui-card-primary-title">快读模板</span>
+                        <div class="mdui-chip mdui-float-right">
+                            <a class="mdui-chip-title">模板</a>
+                        </div>
+                    </div>
+                    <div class="mdui-card-primary-subtitle">2019-8-14 22:36:30</div>
+                </div>
+                <div class="mdui-card-content mdui-typo-body-1">
+                    今天写了一个不错的快读，跟大家分享...
+                </div>
+            </div>
         </div>
     </main>
+    <script>
+    (function() {
+        window.addEventListener('load', function() {
+            let cards = document.getElementsByClassName('mdui-container-fluid')[0].getElementsByClassName('mdui-card');
+            let now = 0;
+            let timer = setInterval(showCard, 200);
+            
+            function showCard() {
+                if (now >= cards.length) {
+                    clearInterval(timer);
+                    return;
+                }
+                cards[now].setAttribute('style', 'animation: fade-in-left 0.5s ease-in; opacity: 1;');
+                now ++;
+            }
+        }, false);
+    })();
+
+    function gotoLink(link) {
+        if (link == '' || link == 'javascript:;') return;
+        let cards = document.getElementsByClassName('mdui-container-fluid')[0].getElementsByClassName('mdui-card');
+        let now = 0;
+        let timer = setInterval(closeCard, 200);
+        
+        function closeCard() {
+            if (now >= cards.length) {
+                clearInterval(timer);
+                setTimeout(function() { window.location.href = link; }, 400);
+                return;
+            }
+            cards[now].setAttribute('style', 'animation: fade-out-right 0.5s ease-out; opacity: 0;');
+            now ++;
+        }
+        
+    }
+    </script>
+    <style>
+        .mdui-container-fluid .mdui-card {
+            opacity: 0;
+        }
+    </style>
 </body>
 
 </html>
