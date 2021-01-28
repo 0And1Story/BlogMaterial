@@ -126,7 +126,7 @@
                     clearInterval(timer);
                     return;
                 }
-                cards[now].setAttribute('style', 'animation: fade-in-left 0.5s ease-in; opacity: 1;');
+                cards[now].setAttribute('style', 'animation: fade-in-left 0.5s ease-out; opacity: 1;');
                 now ++;
             }
         }, false);
@@ -144,7 +144,7 @@
                 setTimeout(function() { window.location.href = link; }, 400);
                 return;
             }
-            cards[now].setAttribute('style', 'animation: fade-out-right 0.5s ease-out; opacity: 0;');
+            cards[now].setAttribute('style', 'animation: fade-out-right 0.5s ease-in; opacity: 0;');
             now ++;
         }
         
